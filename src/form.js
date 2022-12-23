@@ -19,10 +19,8 @@ const Form = (props) =>{
         else if(!validator.isEmail(email)){
             errors.email = 'invalid email format'
             }
-    }
+        }
 
-
-    
             const handlenameChange =(e)=>{
                     setName(e.target.value)
             }
@@ -58,29 +56,28 @@ const Form = (props) =>{
         }
                 return(
                     <div style = {{ display:'center'}}  >
-                        <div style = {{ textAlign:'center'}} >
+                      <div style = {{ display:'inline'}}>
+                      <div style = {{ textAlign:'center'}} >
                         <h2 >GET IN TOUCH </h2>
                         <p>Please complete the form and we will get back to you</p>
                         </div>
 
-                        
-  
-        <div class="row" style={{}}> 
+                <div class="row"> 
           
-            <div className="col-md-3 center" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 260,}}>
+                <div className="col-md-3 center" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 260,}}>
                 <form onSubmit={handleSubmit} style = {{ marginLeft: 650,}}>
                     <div class="form-group">
-                        <label >Name</label> <br/>
+                        <b >Name*</b> <br/>
                         <input type="text" value={name} onChange={handlenameChange}/>
                         {formErrors.name &&  <span  style={{color:'red'}} >{formErrors.name}</span> }<br/>
                     </div>
                     <div class="form-group">
-                        <label > Email</label> <br/>
+                        <b> Email*</b> <br/>
                         <input type="text" value={email} onChange={handleemailChange}/>
                         {formErrors.email &&  <span style={{color:'red'}}>{formErrors.email}</span> } <br/>
                     </div>
                     <div class="form-group">
-                        <label > Mobile </label> <br/>
+                        <b> Mobile* </b> <br/>
                         <input value={mobile} onChange={handlemobileChange} /> <br/>
                     </div>
                     <br/>
@@ -90,6 +87,7 @@ const Form = (props) =>{
             </div>
           
         </div>
+                      </div>
 
         </div>
         )
