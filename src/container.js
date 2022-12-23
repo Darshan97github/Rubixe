@@ -54,7 +54,6 @@ const Container = (props) =>{
             <Intro style={{display:'inline'}}/>
             <img src={logo2} style={{ width: 600, height: 300, float:'left',marginLeft: 850, }} class="img-thumbnail" alt="..."></img>
             </div>
-            
             <History/>
             <Cards/>
             <br/>
