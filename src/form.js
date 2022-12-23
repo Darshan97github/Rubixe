@@ -64,7 +64,7 @@ const Form = (props) =>{
 
                 <div class="row"> 
           
-                <div className="col-md-3 center" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 260,}}>
+                <div className="col-md-3 center" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginLeft: 250,}}>
                 <form onSubmit={handleSubmit} style = {{ marginLeft: 650,}}>
                     <div class="form-group">
                         <b >Name*</b> <br/>
